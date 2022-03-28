@@ -1,9 +1,16 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tabnotif</ion-title>
+<ion-header class="ion-no-boder" mode="ios">
+  <ion-toolbar class="ion-padding">
+    <ion-icon name="menu-outline" size="big" slot="start"></ion-icon>
+    <ion-title>Chat</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-</ion-content>
+  <div>
+    <ion-segment value="chat" (ion Change)="segmentChange($event)">
+     <ion-segment-button value="chats">
+      <ion-label>Chats</ion-label>
+     </ion-segment-button>
+    </ion-segment>
+  </div>
+  </ion-content>
