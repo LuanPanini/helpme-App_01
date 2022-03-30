@@ -13,7 +13,11 @@ const routes: Routes = [
 {
   path: 'tabnotif',
   loadChildren: () => import('./tabnotif/tabnotif.module').then( m => m.TabnotifPageModule)
-}
+},
+  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  }
 ];
 @NgModule({
   imports: [

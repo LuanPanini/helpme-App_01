@@ -6,11 +6,162 @@
 </ion-header>
 
 <ion-content>
-  <div>
-    <ion-segment value="chat" (ion Change)="segmentChange($event)">
+  <div class="tabs ion-no-boder">
+    <ion-segment value="chats" (ionChange)="segmentChange($event)">
      <ion-segment-button value="chats">
       <ion-label>Chats</ion-label>
      </ion-segment-button>
+     <ion-segment-button value="calls">
+      <ion-label>Calls</ion-label>
+     </ion-segment-button>
     </ion-segment>
+
   </div>
-  </ion-content>
+  <ion-list>
+  <div class="chat-list" *ngIf="activeTab ==='chats'" >
+    <div class="recent-chats ion-padding">
+      <div class="heading">
+        <h1>Recent Chats</h1>
+        <ion-icon name="search"></ion-icon>
+      </div>
+      <div class="chats">
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/300" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 1</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>2:13</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/303" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 2</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>1</ion-badge>
+            <p>2:30</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/306" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 3</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>3</ion-badge>
+            <p>2:40</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/309" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 4</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-badge>4</ion-badge>
+
+            <p>2:50</p>
+          </div>
+        </ion-item>
+      </div>
+
+    </div>
+    <div class="recent-chats ion-padding">
+      <div class="heading">
+        <h1>All Chats</h1>
+        <ion-icon name="search"></ion-icon>
+      </div>
+      <div class="chats"(ionChange)="segmentChange($event)">
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/323" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 5</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+            <p>1:05</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/390" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 6</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+            <p>1:12</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/306" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 7</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+            <p>1:15</p>
+          </div>
+        </ion-item>
+        <ion-item lines="none" routerLink="/conversation-page">
+
+          <ion-avatar slot="start">
+            <img class="avatar" src="https://i.pravatar.cc/405" alt="">
+          </ion-avatar>
+
+          <ion-label class="ion-text-nowrap">
+            <h2>Cliente 8</h2>
+            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+          </ion-label>
+          <div class="info-div">
+            <ion-icon name="checkmark-done-outline"></ion-icon>
+            <p>1:30</p>
+          </div>
+        </ion-item>
+      </div>
+
+    </div>
+  </div>
+</ion-list>
+  <ion-fab-button>
+     <ion-icon name="chatbox-ellipses-outline"></ion-icon>
+    </ion-fab-button>
+
+</ion-content>
