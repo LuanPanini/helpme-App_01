@@ -1,21 +1,23 @@
 ion-header{
+
   ion-toolbar{
-      --background: #993399;
-      font-family: "Arial", cursive !important;
-      letter-spacing: 2px;
+      --background: #b19cd9;
+      font-family: "Arial", cursive;
+
       font-size: 2rem !important;
       color: #fff;
       ion-title{
-          margin-top: 5px;
-          font-size: 2rem !important;
+          margin-top: 1px;
+          font-size: 25px;
       }
+
 
   }
 }
 ion-content{
-  --background: #0a000a;
+  --background: #fff;
   .tabs{
-   margin-top:20px;
+   margin-top:10px;
    font-family: Nato Sans HK;
    ion-segment{
        -backgroud: none;
@@ -27,20 +29,20 @@ ion-content{
        --padding-botton:3px !important;
        --padding-end:8px !important;
        --padding-top:3px !important;
-       --background-checked:#500350;
+       --background-checked:#b19cd9;
        --indicator-color: transparent !important;
        --color: #d1d1d1;
        --color-checked:#fff;
        font-weight: bold;
-       border-radius: 22px;
+       border-radius: 15px;
 
 
       }
   }
 
 .chat-list{
-   background: rgb(246, 247, 250);
-   margin-top: 25px;
+   background: #fff;
+   margin-top: 15px;
    border-top-right-radius: 38px;
    border-top-left-radius: 38px;
 
@@ -79,13 +81,13 @@ ion-content{
               h2{
                   font-size: 1rem;
                   font-weight: bolder;
-                  color:#fcf7fc;
+                  color:black;
 
               }
               p{
                   margin-top: 6px;
                   font-size: 0.8rem;
-                  color: #fff;
+                  color: rgb(0, 0, 0);
                   opacity: 0.5;
                   letter-spacing: 0.5;
                   font-weight: bold;
@@ -96,7 +98,7 @@ ion-content{
               position: absolute;
               right: 0;
               font-size: 0.8rem;
-              color: #f1e4e4;
+              color: #000000;
               font-weight: bolder;
               text-align: right;
               p{
@@ -113,7 +115,7 @@ ion-content{
                   --padding-end:5px;
                   --padding-bottom: 3px;
                   --padding-top:3px;
-                  --background: red;
+                  --background: #b19cd9;
               }
           }
       }
@@ -127,6 +129,6 @@ ion-content{
      z-index: 111;
      bottom:30px;
      right: 15px;
-     --background: #e71d93;
+     --background: #b19cd9;
   }
 }
