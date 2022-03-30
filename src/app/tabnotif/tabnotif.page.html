@@ -6,7 +6,7 @@
 </ion-header>
 
 <ion-content>
-  <div class="tabs ion-no-boder">
+  <div>
     <ion-segment value="chats" (ionChange)="segmentChange($event)">
      <ion-segment-button value="chats">
       <ion-label>Chats</ion-label>
@@ -17,12 +17,13 @@
     </ion-segment>
 
   </div>
-  <ion-list>
   <div class="chat-list" *ngIf="activeTab ==='chats'" >
     <div class="recent-chats ion-padding">
       <div class="heading">
         <h1>Recent Chats</h1>
-        <ion-icon name="search"></ion-icon>
+        <ion-button>
+        <ion-icon name="search" color="black"></ion-icon>
+      </ion-button>
       </div>
       <div class="chats">
         <ion-item lines="none" routerLink="/conversation-page">
@@ -159,7 +160,7 @@
 
     </div>
   </div>
-</ion-list>
+
   <ion-fab-button>
      <ion-icon name="chatbox-ellipses-outline"></ion-icon>
     </ion-fab-button>
