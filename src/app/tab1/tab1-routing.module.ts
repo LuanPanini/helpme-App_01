@@ -7,10 +7,6 @@ const routes: Routes = [
     path: '',
     component: Tab1Page,
   },
-  {
-    path: 'tabnotif',
-    loadChildren: () => import('../tabnotif/tabnotif.module').then(m => m.TabnotifPageModule)
-  }
 ];
 
 @NgModule({

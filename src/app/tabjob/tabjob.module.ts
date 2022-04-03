@@ -15,7 +15,8 @@ import { TabjobPage } from './tabjob.page';
     FormsModule,
     IonicModule,
     ExploreContainerComponentModule,
-    TabjobPageRoutingModule
+    TabjobPageRoutingModule,
+    RouterModule
   ],
   declarations: [TabjobPage]
 })

@@ -1,4 +1,3 @@
-import { TabnotifPageRoutingModule } from './../tabnotif/tabnotif-routing.module';
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
