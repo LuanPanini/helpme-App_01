@@ -15,7 +15,10 @@ import { TabnotifPage } from './tabnotif.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    TabnotifPageRoutingModule
+    TabnotifPageRoutingModule,
+    ExploreContainerComponentModule,
+    RouterModule
+
   ],
   declarations: [TabnotifPage]
 })

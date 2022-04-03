@@ -4,10 +4,10 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Tab1Page } from './tab1.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { SharedComponentsModule } from '../components/shared-components.module';
-import { SharedDirectivesModule } from '../directives/shared-directives.module';
+import { RouterModule } from '@angular/router';
+
 
 @NgModule({
   imports: [
@@ -17,7 +17,7 @@ import { SharedDirectivesModule } from '../directives/shared-directives.module';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
     SharedComponentsModule,
-    SharedDirectivesModule
+    RouterModule,
   ],
   declarations: [Tab1Page]
 })
