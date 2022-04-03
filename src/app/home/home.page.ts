@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  tweets = [];
+  segment = 'home';
+  opts = {
+    slidesPerView: 4.5,
+    spaceBetween: 10,
+    slidesOffsetBefore: 0
+  };
+
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
   }
-
 }

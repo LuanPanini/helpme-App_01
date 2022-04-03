@@ -1,18 +1,9 @@
-ion-header{
+ion-toolbar {
+  --border-style: none;
+}
 
-  ion-toolbar{
-      --background: #b19cd9;
-      font-family: "Arial", cursive;
-
-      font-size: 2rem !important;
-      color: #fff;
-      ion-title{
-          margin-top: 1px;
-          font-size: 25px;
-      }
-
-
-  }
+ion-header {
+  background: #fff;
 }
 ion-content{
   --background: #fff;
@@ -109,8 +100,8 @@ ion-content{
                   font-size: 1.3rem;
               }
               ion-badge{
-                  font-size: 11px;
-                  margin-bottom: 5px;
+                  font-size: 10px;
+
                   --padding-start:5px;
                   --padding-end:5px;
                   --padding-bottom: 3px;

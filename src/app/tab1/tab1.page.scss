@@ -1,0 +1,13 @@
+ion-toolbar {
+  --border-style: none;
+}
+
+ion-header {
+  background: #fff;
+}
+
+
+ion-avatar {
+  border: 2px solid var(--ion-color-primary);
+  padding: 2px;
+}

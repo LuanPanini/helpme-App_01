@@ -1,24 +1,21 @@
 import { IonicModule } from '@ionic/angular';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
-import { Tab1Page } from './tab1.page';
+import { TweetComponent } from './tweet/tweet.component';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
-
-import { Tab1PageRoutingModule } from './tab1-routing.module';
-import { SharedComponentsModule } from '../components/shared-components.module';
+import { FormsModule } from '@angular/forms';
 import { SharedDirectivesModule } from '../directives/shared-directives.module';
 
 @NgModule({
+  declarations: [TweetComponent],
   imports: [
-    IonicModule,
     CommonModule,
+    IonicModule,
     FormsModule,
     ExploreContainerComponentModule,
-    Tab1PageRoutingModule,
-    SharedComponentsModule,
     SharedDirectivesModule
+
   ],
-  declarations: [Tab1Page]
+  exports: [TweetComponent]
 })
-export class Tab1PageModule {}
+export class SharedComponentsModule { }
