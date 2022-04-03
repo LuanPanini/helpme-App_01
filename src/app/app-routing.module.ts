@@ -17,6 +17,10 @@ const routes: Routes = [
   {
     path: 'chat',
     loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+  {
+    path: 'tweet',
+    loadChildren: () => import('./components/shared-components.module').then( m => m.SharedComponentsModule)
   }
 ];
 @NgModule({
