@@ -1,9 +1,53 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>cadastro</ion-title>
+    <ion-title>
+      <img src="assets/img/Logo Help.me.png" width="300px" height="120px"/>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+      <ion-content>
+        <ion-item>
+          <ion-label position="floating">Nome</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
 
+        <ion-item>
+          <ion-label>Data de nascmento:</ion-label>
+          <ion-input id="date" type="date"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-select placeholder="Genero">
+            <ion-select-option value="f">Female</ion-select-option>
+            <ion-select-option value="m">Male</ion-select-option>
+            <ion-select-option value="p">Prefiro não dizer</ion-select-option>
+          </ion-select>
+        </ion-item>
+
+        <ion-item >
+          <ion-label position="floating">Email</ion-label>
+          <ion-input  type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item >
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input  type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item >
+          <ion-label position="floating">Confirme a senha</ion-label>
+          <ion-input  type="text" required></ion-input>
+        </ion-item>
+
+        <ion-button type="submit" expand="block" fill="outline" shape="around">
+          Criar conta Help me
+        </ion-button>
+
+        <ion-item class="ion-text-center">
+          <ion-label>Ou</ion-label>
+        </ion-item>
+
+        <ion-button color="dark" expand="block" fill="outline" [routerLink]="['/login']">Login</ion-button>
 </ion-content>
