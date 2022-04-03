@@ -1,4 +1,6 @@
-<ion-header #header>
+
+
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
@@ -17,13 +19,17 @@
 </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" scrollEvents="true" [appHideHeader]="header">
+
+
+<ion-content [fullscreen]="true" scrollEvents="true">
 
   <div *ngIf="segment === 'home'">
     <app-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></app-tweet>
 
   </div>
 
-<ion-row></ion-row>
+<ion-row>
+
+</ion-row>
 </ion-content>
 
