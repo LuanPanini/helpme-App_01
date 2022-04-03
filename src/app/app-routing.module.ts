@@ -25,7 +25,8 @@ const routes: Routes = [
   {
     path: 'tweet',
     loadChildren: () => import('./components/shared-components.module').then( m => m.SharedComponentsModule)
-  },  {
+  },
+  {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
   }
