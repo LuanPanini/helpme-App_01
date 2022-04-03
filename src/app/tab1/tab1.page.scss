@@ -1,13 +1,16 @@
 ion-toolbar {
   --border-style: none;
+  align-items:  center;
 }
 
 ion-header {
   background: #fff;
 }
 
-
-ion-avatar {
-  border: 2px solid var(--ion-color-primary);
-  padding: 2px;
+ion-buttons{
+ color:#b19cd9 ;
 }
+.toolbar-title{
+  align-items:  center;
+}
+

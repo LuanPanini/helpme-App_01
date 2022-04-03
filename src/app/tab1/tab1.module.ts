@@ -7,6 +7,7 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 import { SharedComponentsModule } from '../components/shared-components.module';
 import { RouterModule } from '@angular/router';
+import { SharedDirectivesModule } from '../directives/shared-directives.module';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
     SharedComponentsModule,
+    SharedDirectivesModule,
     RouterModule,
   ],
   declarations: [Tab1Page]

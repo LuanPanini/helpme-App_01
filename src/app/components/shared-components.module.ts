@@ -13,7 +13,8 @@ import { SharedDirectivesModule } from '../directives/shared-directives.module';
     IonicModule,
     FormsModule,
     ExploreContainerComponentModule,
-    SharedDirectivesModule
+    SharedDirectivesModule,
+
 
   ],
   exports: [TweetComponent]

@@ -9,6 +9,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { HomePage } from './home.page';
 
 import { RouterModule } from '@angular/router';
+import { SharedDirectivesModule } from '../directives/shared-directives.module';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { RouterModule } from '@angular/router';
     ExploreContainerComponentModule,
     HomePageRoutingModule,
     RouterModule,
+    SharedDirectivesModule,
   ],
   declarations: [HomePage]
 })
