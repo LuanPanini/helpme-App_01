@@ -1,10 +1,8 @@
 .ion-justify-content-start {
   justify-content: flex-start !important;
 }
-
 .hydrated{
   align-items: center;
-
 }
 ion-buttons{
   color:#b19cd9 ;
@@ -12,10 +10,7 @@ ion-buttons{
   align-items: center;
  }
 ion-icon{
-
   align-items: flex-end;
-
-
 }
 .post{
   height: 150px;
@@ -28,4 +23,9 @@ ion-chip{
 }
 .icon{
   direction:rtl;
+}
+ion-toolbar {
+  --border-style: none;
+  align-items:  center;
+  text-align: center;
 }

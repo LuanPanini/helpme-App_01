@@ -1,14 +1,18 @@
 .ion-justify-content-start {
   justify-content: flex-start !important;
 }
-
 .hydrated{
   align-items: center;
+}
 
+ion-icon{
+  align-items: center;
+}
+ion-toolbar {
+  --border-style: none;
+  align-items:  center;
+  text-align: center;
 }
 ion-buttons{
   color:#b19cd9 ;
  }
-ion-icon{
-  align-items: center;
-}

@@ -1,5 +1,12 @@
 .item ion-icon[item-left] {
   width: 45px;
 }
-
+ion-toolbar {
+  --border-style: none;
+  align-items:  center;
+  text-align: center;
+}
+ion-buttons{
+  color:#b19cd9 ;
+ }
 

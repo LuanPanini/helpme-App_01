@@ -1,14 +1,13 @@
 ion-toolbar {
   --border-style: none;
   align-items:  center;
+  text-align: center;
 }
-
+ion-buttons{
+  color:#b19cd9 ;
+ }
 ion-header {
   background: #fff;
-}
-
-ion-buttons{
- color:#b19cd9 ;
 }
 .toolbar-title{
   align-items:  center;
