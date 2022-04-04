@@ -1,5 +1,3 @@
-
-
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -8,28 +6,24 @@
       </ion-button>
     </ion-buttons>
 
-    <ion-title>
-      <img src="assets/img/Logo_H4.png"/>
-    </ion-title>
+        <ion-title>
+          <img src="assets/img/Logo_H4.png"/>
+        </ion-title>
     <ion-buttons slot="end">
-    <ion-button>
-      <ion-icon slot="icon-only" name="cog"></ion-icon>
-    </ion-button>
-  </ion-buttons>
-</ion-toolbar>
+      <ion-button>
+        <ion-icon slot="icon-only" name="cog"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-header>
 
 
 
 <ion-content [fullscreen]="true" scrollEvents="true">
 
-  <div *ngIf="segment === 'home'">
-    <app-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></app-tweet>
+      <div *ngIf="segment === 'home'">
+        <app-tweet *ngFor="let tweet of tweets" [tweet]="tweet"></app-tweet>
+      </div>
 
-  </div>
-
-<ion-row>
-
-</ion-row>
 </ion-content>
 

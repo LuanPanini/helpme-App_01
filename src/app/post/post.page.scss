@@ -12,6 +12,20 @@ ion-buttons{
   align-items: center;
  }
 ion-icon{
-  align-items: center;
 
+  align-items: flex-end;
+
+
+}
+.post{
+  height: 150px;
+  align-items:flex-start;
+}
+ion-chip{
+
+  background:top ;
+
+}
+.icon{
+  direction:rtl;
 }

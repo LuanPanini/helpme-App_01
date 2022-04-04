@@ -2,10 +2,11 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-<ion-button>
-    <ion-icon name="menu-outline" size="big"></ion-icon>
-  </ion-button>
-  </ion-buttons>
+      <ion-button>
+        <ion-icon name="menu-outline" size="big"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
     <ion-title>Chat</ion-title>
     <ion-buttons slot="end">
       <ion-button>
@@ -21,8 +22,8 @@
     <div class="recent-chats ion-padding">
       <div class="heading">
         <h1>Recent Chats</h1>
-
       </div>
+
       <div class="chats">
         <ion-item lines="none" routerLink="/conversation-page">
 
@@ -39,23 +40,23 @@
             <p>2:13</p>
           </div>
         </ion-item>
+
         <ion-item lines="none" routerLink="/conversation-page">
+            <ion-avatar slot="start">
+              <img class="avatar" src="https://i.pravatar.cc/303" alt="">
+            </ion-avatar>
 
-          <ion-avatar slot="start">
-            <img class="avatar" src="https://i.pravatar.cc/303" alt="">
-          </ion-avatar>
+            <ion-label class="ion-text-nowrap">
+              <h2>Cliente 2</h2>
+              <p>Olá, presciso de um que você realize um serviço referente a ....</p>
+            </ion-label>
+            <div class="info-div">
+              <ion-badge>1</ion-badge>
+              <p>2:30</p>
+            </div>
+         </ion-item>
 
-          <ion-label class="ion-text-nowrap">
-            <h2>Cliente 2</h2>
-            <p>Olá, presciso de um que você realize um serviço referente a ....</p>
-          </ion-label>
-          <div class="info-div">
-            <ion-badge>1</ion-badge>
-            <p>2:30</p>
-          </div>
-        </ion-item>
         <ion-item lines="none" routerLink="/conversation-page">
-
           <ion-avatar slot="start">
             <img class="avatar" src="https://i.pravatar.cc/306" alt="">
           </ion-avatar>
@@ -69,6 +70,7 @@
             <p>2:40</p>
           </div>
         </ion-item>
+
         <ion-item lines="none" routerLink="/conversation-page">
 
           <ion-avatar slot="start">
@@ -88,11 +90,13 @@
       </div>
 
     </div>
+
     <div class="recent-chats ion-padding">
       <div class="heading">
         <h1>All Chats</h1>
         <ion-icon name="search"></ion-icon>
       </div>
+
       <div class="chats"(ionChange)="segmentChange($event)">
         <ion-item lines="none" routerLink="/conversation-page">
 
@@ -161,6 +165,6 @@
 
   <ion-fab-button>
      <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-    </ion-fab-button>
+  </ion-fab-button>
 
 </ion-content>

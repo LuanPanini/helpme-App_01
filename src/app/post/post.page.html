@@ -1,84 +1,128 @@
-<ion-header>
+
+<ion-header #header>
   <ion-toolbar>
-    <ion-title>post</ion-title>
-  </ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title>
+      <img src="assets/img/Logo_H4.png"/>
+    </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+       <ion-icon slot="icon-only" name="cog"></ion-icon>
+      </ion-button>
+   </ion-buttons>
+ </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-card>
 
     <ion-row class="ion-justify-content-start">
-    <ion-card-header>
+       <ion-card-header>
 
-      <ion-col class="avatar">
-      <ion-title>
-        <ion-avatar>
-        <img class="avatar" src="assets/img/Panini.jpg"/>
-      </ion-avatar>
-      </ion-title>
+        <ion-col class="avatar">
+
+          <ion-avatar>
+            <img class="avatar" src="assets/img/Panini.jpg"/>
+          </ion-avatar>
+
+        </ion-col>
+      </ion-card-header>
+
+        <ion-col>
+            <ion-card-title>
+              <h4>Luan Panini</h4>
+            </ion-card-title>
+              <ion-card-subtitle>Desenvolvedor Back-End</ion-card-subtitle>
+              <ion-card-subtitle>Santa Barbara D'Oeste</ion-card-subtitle>
+        </ion-col>
+
+    </ion-row>
+
+      <ion-card>
+        <ion-row>
+    <ion-col>
+      <ion-text>
+        <ion-label position="floating">O que você precisa?</ion-label>
+        <ion-input class="post"></ion-input>
+
+      </ion-text>
     </ion-col>
-  </ion-card-header>
-
-  <ion-col>
-      <ion-card-title>Luan Panini</ion-card-title>
-      <ion-card-subtitle>Desenvolvedor Back-End</ion-card-subtitle>
-      <ion-card-subtitle>Santa Barbara D'Oeste</ion-card-subtitle>
-    </ion-col>
+        </ion-row>
+      </ion-card>
 
 
-  </ion-row>
-  <ion-card>
-<ion-row>
-<ion-col>
-  <ion-text>
-<p>
+    <ion-row class="icon">
 
-Era uma vez uma corrida de sapinhos !
+      <ion-chip>
+        <ion-icon name="trash" color="primary"></ion-icon>
+      </ion-chip>
 
-O objetivo era atingir o alto de uma grande torre.
+      <ion-chip>
+        <ion-icon name="paper-plane" color="primary"></ion-icon>
+      </ion-chip>
 
-Havia no local uma multidão assistindo.
-Muita gente para vibrar e torcer por eles.
-
-Começou a competição.
-Mas como a multidão não acreditava que os sapinhos pudessem alcançar o alto daquela torre, o que mais se ouvia era:
-“Que pena !!! esses sapinhos não vão conseguir… não vão conseguir…”
-
-E os sapinhos começaram a desistir.
-Mas havia um que persistia e continuava a subida em busca do topo…
-
-A multidão continuava gritando :
-“… que pena !!! voltem! vocês não vão conseguir !…”
-
-E os sapinhos estavam mesmo desistindo, um por um…
-menos aquele sapinho que continuava tranqüilo… embora cada vez mais arfante.
-
-Já ao final da competição, todos desistiram, menos ele…
-A curiosidade tomou conta de todos.
-Queriam saber o que tinha acontecido…
-E assim, quando foram perguntar ao sapinho como ele havia conseguido concluir a prova,
-aí sim conseguiram descobrir… que ele era surdo !!!
+    </ion-row>
 
 
 
-Não permita que pessoas com o péssimo hábito de serem negativas, derrubem as melhores e mais sábias esperanças de nosso coração !
-Lembre-se sempre :
-Há poder em nossas palavras e em tudo o que pensamos…
-Portanto, procure sempre ser POSITIVO !
-Seja “surdo” quando alguém lhe diz que você não pode realizar seus sonhos…
 
-</p>
-  </ion-text>
-</ion-col>
-</ion-row>
-</ion-card>
-<ion-chip>
-  <ion-icon name="paper-plane" color="primary"></ion-icon>
-  <ion-label color="primary"></ion-label>
-</ion-chip>
-<ion-chip>
-  <ion-icon name="person-add" color="primary"></ion-icon>
-  <ion-label color="primary"></ion-label>
-</ion-chip>
+    <ion-list inset="true">
+    <div class="inserir">
+      <ion-accordion-group value="colors">
+        <ion-accordion value="colors">
+          <ion-item slot="header">
+            <ion-label>Inserir</ion-label>
+          </ion-item>
+
+          <ion-list slot="content">
+          <ion-item>
+            <ion-col class="avatar">
+
+              <ion-chip>
+                <ion-icon name="camera" color="primary"></ion-icon>
+                <ion-label>Camera</ion-label>
+              </ion-chip>
+            </ion-col>
+          </ion-item>
+
+          <ion-item>
+            <ion-chip>
+              <ion-icon name="happy" color="primary"></ion-icon>
+              <ion-label>Sentimento</ion-label>
+            </ion-chip>
+          </ion-item>
+
+          <ion-item>
+            <ion-chip>
+              <ion-icon name="earth" color="primary"></ion-icon>
+              <ion-label>Localização</ion-label>
+            </ion-chip>
+          </ion-item>
+
+          <ion-item>
+            <ion-chip>
+              <ion-icon name="images" color="primary"></ion-icon>
+              <ion-label>Foto/video</ion-label>
+            </ion-chip>
+          </ion-item>
+
+          <ion-item>
+            <ion-chip>
+              <ion-icon name="people" color="primary"></ion-icon>
+              <ion-label>Marcar</ion-label>
+            </ion-chip>
+          </ion-item>
+
+          </ion-list>
+        </ion-accordion>
+     </ion-accordion-group>
+    </div>
+    </ion-list>
 
   </ion-card>
+</ion-content>
