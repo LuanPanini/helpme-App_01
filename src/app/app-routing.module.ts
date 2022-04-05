@@ -40,6 +40,10 @@ const routes: Routes = [
   {
     path: 'config',
     loadChildren: () => import('./config/config.module').then( m => m.ConfigPageModule)
+  },
+  {
+    path: 'conversation',
+    loadChildren: () => import('./conversation/conversation.module').then( m => m.ConversationPageModule)
   }
 
 
