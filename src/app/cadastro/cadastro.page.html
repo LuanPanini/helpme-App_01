@@ -6,19 +6,43 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-      <ion-content>
-        <ion-item>
+  <ion-slides>
+    <ion-slide value="pessoa fisica">
+      <div class="slide-inner ion-padding">
+        <h1 class="title">Pessoa Fisica</h1>
+
+        <p class="digitacao">É pessoa juridica? arraste para o lado!</p>
+
+        <div>
+          <ion-fab vertical="left" horizontal="end" slot="fixed" margin-left="20px">
+            <ion-fab-button>
+              <ion-icon name="cube-outline"></ion-icon>
+            </ion-fab-button>
+            <ion-fab-list side="top">
+              <ion-fab-button href="#"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+            <ion-fab-list side="start">
+              <ion-fab-button href="#"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+            <ion-fab-list side="button">
+              <ion-fab-button href="#"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+      </div>
+
+        <ion-item class="ion-margin-top">
           <ion-label position="floating">Nome</ion-label>
           <ion-input type="text" required></ion-input>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="ion-margin-top">
           <ion-label>Data de nascmento:</ion-label>
           <ion-input id="date" type="date"></ion-input>
         </ion-item>
 
-        <ion-item>
+        <ion-item class="ion-margin-top">
           <ion-select placeholder="Genero">
             <ion-select-option value="f">Female</ion-select-option>
             <ion-select-option value="m">Male</ion-select-option>
@@ -26,17 +50,54 @@
           </ion-select>
         </ion-item>
 
-        <ion-item >
+        <ion-item class="ion-margin-top">
           <ion-label position="floating">Email</ion-label>
           <ion-input  type="text" required></ion-input>
         </ion-item>
 
-        <ion-item >
+        <ion-item class="ion-margin-top">
           <ion-label position="floating">Senha</ion-label>
           <ion-input  type="text" required></ion-input>
         </ion-item>
 
-        <ion-item >
+        <ion-item class="ion-margin-top">
+          <ion-label position="floating">Confirme a senha</ion-label>
+          <ion-input  type="text" required></ion-input>
+        </ion-item>
+
+        <ion-button class="btn" type="submit" expand="block" fill="outline" shape="around">
+          Criar conta Help me
+        </ion-button>
+
+      </div>
+    </ion-slide>
+
+    <ion-slide class="session" value="pessoa juriidica">
+      <div class="slide-inner ion-padding">
+        <br> <br> <br>
+        <h1 class="title2">Pessoa Juridica</h1>
+
+        <ion-item class="ion-margin-top">
+          <ion-label position="floating">Nome da empresa</ion-label>
+          <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top">
+          <ion-label position="floating">Digite o CNPJ</ion-label>
+          <ion-input type="text" name="cpf" title="Digite um CPF no formato: xxx.xxx.xxx-xx"></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top">
+          <ion-label position="floating">Email</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top">
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input  type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top">
           <ion-label position="floating">Confirme a senha</ion-label>
           <ion-input  type="text" required></ion-input>
         </ion-item>
@@ -45,9 +106,20 @@
           Criar conta Help me
         </ion-button>
 
-        <ion-item class="ion-text-center">
-          <ion-label>Ou</ion-label>
-        </ion-item>
+        <ion-footer class="ion-margin-center">
+          <p>
+            O Aplicativo help me está muito ancioso para que você consiga crescer com seu empreendimento!
+          </p>
+          <p>
+            CopyRight©2022 - Help me
+          </p> <br> <br>
+        </ion-footer>
 
-        <ion-button color="dark" expand="block" fill="outline" [routerLink]="['/login']">Login</ion-button>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+
 </ion-content>
+
+
