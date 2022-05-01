@@ -1,11 +1,12 @@
+
 ion-title {
   text-align: center;
 }
 ion-slides {
-  height: 100%;
+  height: 80%;
 
   .slide-inner {
-      width: 75%;
+      width: 80%;
       color: rgb(0, 0, 0);
       background-color: #e0a0f3;
       border-radius: 10px;
@@ -17,9 +18,6 @@ ion-slides {
           ion-input {
               --color: rgb(0, 0, 0);
           }
-      }
-      ion-button {
-        color: #020101;
       }
   }
 }
@@ -68,4 +66,23 @@ p .title2 {
   50% {
     border-color: transparent
   }
+}
+ion-content .here {
+  height: 100%;
+  margin-top: 20px;
+}
+ion-title img {
+  height: 120px;
+  width: 300px;
+}
+#scroll {
+  height:100%;
+  overflow:scroll;
+}
+#box {
+  margin-top: 20px;
+}
+#btn {
+  color: #020101;
+  text-decoration: none;
 }

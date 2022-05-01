@@ -1,18 +1,15 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      <img src="assets/img/Logo Help.me.png" width="300px" height="120px"/>
-    </ion-title>
-  </ion-toolbar>
+  <ion-title>
+    <img src="assets/img/Logo Help.me.png"/>
+  </ion-title>
 </ion-header>
 
-
-<ion-content>
+<ion-content id="box">
   <ion-slides>
-    <ion-slide value="pessoa fisica">
+    <ion-slide value="pessoa fisica" id='scroll'>
       <div class="slide-inner ion-padding">
+        <br> <br> <br> <br><br> <br> <br>  <br><br> <br> <br>
         <h1 class="title">Pessoa Fisica</h1>
-
         <p class="digitacao">É pessoa juridica? arraste para o lado!</p>
 
         <div>
@@ -20,12 +17,15 @@
             <ion-fab-button>
               <ion-icon name="cube-outline"></ion-icon>
             </ion-fab-button>
+
             <ion-fab-list side="top">
               <ion-fab-button href="#"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
             </ion-fab-list>
+
             <ion-fab-list side="start">
               <ion-fab-button href="#"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
             </ion-fab-list>
+
             <ion-fab-list side="button">
               <ion-fab-button href="#"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
             </ion-fab-list>
@@ -35,6 +35,11 @@
         <ion-item class="ion-margin-top">
           <ion-label position="floating">Nome</ion-label>
           <ion-input type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top">
+          <ion-label position="floating">Digite o CPF</ion-label>
+          <ion-input type="text" name="CPF" required></ion-input>
         </ion-item>
 
         <ion-item class="ion-margin-top">
@@ -65,17 +70,49 @@
           <ion-input  type="text" required></ion-input>
         </ion-item>
 
-        <ion-button class="btn" type="submit" expand="block" fill="outline" shape="around">
+        <ion-button id="btn" type="submit" expand="block" fill="outline" shape="around">
           Criar conta Help me
         </ion-button>
 
+        <ion-footer class="ion-margin-center">
+          <p>
+            O Aplicativo help me está muito ancioso para que você consiga crescer com seu empreendimento!
+          </p>
+          <p>
+            CopyRight©2022
+          </p> <br> <br>
+        </ion-footer>
+
       </div>
     </ion-slide>
-
-    <ion-slide class="session" value="pessoa juriidica">
+  <br>
+  <br>
+  <br>
+  <br>
+    <ion-slide value="pessoa juridica" id='scroll'>
       <div class="slide-inner ion-padding">
         <br> <br> <br>
         <h1 class="title2">Pessoa Juridica</h1>
+
+        <div>
+          <ion-fab vertical="left" horizontal="end" slot="fixed" margin-left="20px">
+            <ion-fab-button>
+              <ion-icon name="cube-outline"></ion-icon>
+            </ion-fab-button>
+
+            <ion-fab-list side="top">
+              <ion-fab-button href="#"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+
+            <ion-fab-list side="start">
+              <ion-fab-button href="#"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+
+            <ion-fab-list side="button">
+              <ion-fab-button href="#"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+            </ion-fab-list>
+          </ion-fab>
+      </div>
 
         <ion-item class="ion-margin-top">
           <ion-label position="floating">Nome da empresa</ion-label>
@@ -84,7 +121,7 @@
 
         <ion-item class="ion-margin-top">
           <ion-label position="floating">Digite o CNPJ</ion-label>
-          <ion-input type="text" name="cpf" title="Digite um CPF no formato: xxx.xxx.xxx-xx"></ion-input>
+          <ion-input type="text" name="CNPJ" title="Digite um CPF no formato: xxx.xxx.xxx-xx"></ion-input>
         </ion-item>
 
         <ion-item class="ion-margin-top">
@@ -102,7 +139,7 @@
           <ion-input  type="text" required></ion-input>
         </ion-item>
 
-        <ion-button type="submit" expand="block" fill="outline" shape="around">
+        <ion-button id="btn" type="submit" expand="block" fill="outline" shape="around">
           Criar conta Help me
         </ion-button>
 
@@ -111,14 +148,12 @@
             O Aplicativo help me está muito ancioso para que você consiga crescer com seu empreendimento!
           </p>
           <p>
-            CopyRight©2022 - Help me
+            CopyRight©2022
           </p> <br> <br>
         </ion-footer>
-
       </div>
     </ion-slide>
   </ion-slides>
-
 
 </ion-content>
 
