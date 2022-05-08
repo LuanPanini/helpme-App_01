@@ -6,7 +6,7 @@ ion-slides {
   height: 80%;
 
   .slide-inner {
-      width: 80%;
+      width: 60%;
       color: rgb(0, 0, 0);
       background-color: #e0a0f3;
       border-radius: 10px;
@@ -85,4 +85,7 @@ ion-title img {
 #btn {
   color: #020101;
   text-decoration: none;
+}
+h4{
+  font-size: 14px;
 }

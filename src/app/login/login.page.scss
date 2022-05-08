@@ -4,7 +4,7 @@
 }
 
 .contaier-login {
-  width: 90%;
+  width: 40%;
   padding: 10px;
   background: #FFFFFF;
   border-radius: 5px;
@@ -29,9 +29,10 @@ ion-icon {
   margin-right: 15px;
 }
 
-ion-button {
+ion-button .btn {
   margin-top: 5px;
   margin-bottom: 15px;
+  color: whitesmoke;
 }
 
 ion-slide {
