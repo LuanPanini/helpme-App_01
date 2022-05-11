@@ -6,7 +6,19 @@ const routes: Routes = [
   {
     path: '',
     component: Tab1Page,
+  },  {
+    path: 'inbox',
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
   },
+  {
+    path: 'outbox',
+    loadChildren: () => import('./outbox/outbox.module').then( m => m.OutboxPageModule)
+  },
+  {
+    path: 'spam',
+    loadChildren: () => import('./spam/spam.module').then( m => m.SpamPageModule)
+  },
+
 ];
 
 @NgModule({
