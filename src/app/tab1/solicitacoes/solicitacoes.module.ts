@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SpamPageRoutingModule } from './spam-routing.module';
+import { SolicitacoesPageRoutingModule } from './solicitacoes-routing.module';
 
-import { SpamPage } from './spam.page';
+import { SolicitacoesPage } from './solicitacoes.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    SpamPageRoutingModule
+    SolicitacoesPageRoutingModule
   ],
-  declarations: [SpamPage]
+  declarations: [SolicitacoesPage]
 })
-export class SpamPageModule {}
+export class SolicitacoesPageModule {}

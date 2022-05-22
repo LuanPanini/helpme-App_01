@@ -16,7 +16,7 @@ ion-content{
           font-size: 1.6rem;
           color: #fff;
         }
-    } 
+    }
 
     .info{
         display: flex;
@@ -40,7 +40,7 @@ ion-content{
                 font-size: 1.2rem;
                 font-weight: bold;
             }
-            
+
             p{
                 opacity: 0.8;
                 margin-top: 3px;
@@ -48,6 +48,11 @@ ion-content{
             }
 
        }
-      
+
   }
+}
+ion-toolbar {
+  --border-style: none;
+  align-items:  center;
+  text-align: center;
 }

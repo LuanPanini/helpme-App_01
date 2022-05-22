@@ -33,13 +33,10 @@ const routes: Routes = [
   {
     path: 'cadastro',
     loadChildren: () => import('./cadastro/cadastro.module').then( m => m.CadastroPageModule)
-  },  {
-    path: 'post',
-    loadChildren: () => import('./post/post.module').then( m => m.PostPageModule)
   },
   {
-    path: 'config',
-    loadChildren: () => import('./config/config.module').then( m => m.ConfigPageModule)
+    path: 'post',
+    loadChildren: () => import('./post/post.module').then( m => m.PostPageModule)
   },
   {
     path: 'conversation',

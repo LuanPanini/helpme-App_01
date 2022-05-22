@@ -7,46 +7,66 @@
     </ion-header>
     <ion-content>
       <ion-list>
+
         <ion-menu-toggle>
-          <ion-item routerLink="/inbox">
-            <ion-icon name="mail" slot="start"></ion-icon>
-            <ion-label>Inbox</ion-label>
+          <ion-item routerLink="solicitacoes">
+            <ion-icon name="person-add-outline" slot="start"></ion-icon>
+            <ion-label>Amizades</ion-label>
           </ion-item>
         </ion-menu-toggle>
+
         <ion-menu-toggle>
-          <ion-item routerLink="/outbox">
-            <ion-icon name="paper-plane" slot="start"></ion-icon>
-            <ion-label>Outbox</ion-label>
+          <ion-item routerLink="projetos">
+            <ion-icon name="rocket-outline" slot="start"></ion-icon>
+            <ion-label>Projetos</ion-label>
           </ion-item>
         </ion-menu-toggle>
+
           <ion-menu-toggle>
-            <ion-item routerLink="">
-              <ion-icon name="heart" slot="start"></ion-icon>
-              <ion-label>Favorites</ion-label>
+            <ion-item routerLink="pagamentos">
+              <ion-icon name="cart-outline" slot="start"></ion-icon>
+              <ion-label>Pagamentos</ion-label>
             </ion-item>
           </ion-menu-toggle>
+
             <ion-menu-toggle>
-              <ion-item routerLink="" >
-                <ion-icon name="archive" slot="start"></ion-icon>
-                <ion-label>Archived</ion-label>
+              <ion-item routerLink="reunioes" >
+                <ion-icon name="calendar-number-outline" slot="start"></ion-icon>
+                <ion-label>Reuniões</ion-label>
               </ion-item>
             </ion-menu-toggle>
+
             <ion-menu-toggle>
-              <ion-item routerLink="" >
-                <ion-icon name="trash" slot="start"></ion-icon>
-                <ion-label>Trash</ion-label>
+              <ion-item routerLink="tutorial">
+                <ion-icon name="videocam-outline" slot="start"></ion-icon>
+                <ion-label>Como usar?</ion-label>
               </ion-item>
             </ion-menu-toggle>
-            <ion-menu-toggle>
-              <ion-item routerlink="">
-                <ion-icon name="warning" slot="start"></ion-icon>
-                <ion-label>Spam</ion-label>
-              </ion-item>
-            </ion-menu-toggle>
+            <br>
+
+            <ion-label> Precisa de ajuda?</ion-label>
+
+            <ion-list>
+
+              <ion-menu-toggle>
+                <ion-item routerLink="config">
+                  <ion-icon name="construct-outline" slot="start"></ion-icon>
+                  <ion-label>Configurações</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+
+              <ion-menu-toggle>
+                <ion-item routerLink="suporte">
+                  <ion-icon name="hand-left-outline" slot="start"></ion-icon>
+                  <ion-label>Suporte</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
+
+            </ion-list>
+
       </ion-list>
     </ion-content>
   </ion-menu>
 
   <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
-

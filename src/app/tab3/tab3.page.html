@@ -1,19 +1,14 @@
-<ion-header>
+<ion-header #header>
   <ion-toolbar>
+    <ion-title></ion-title>
     <ion-buttons slot="start">
-      <ion-button>
-        <ion-icon slot="icon-only" name="menu-outline"></ion-icon>
-      </ion-button>
+      <ion-menu-button menu="main-menu"></ion-menu-button>
     </ion-buttons>
 
         <ion-title>
           <img src="assets/img/Logo_H4.png"/>
         </ion-title>
-    <ion-buttons slot="end">
-      <ion-button>
-        <ion-icon slot="icon-only" name="cog"></ion-icon>
-      </ion-button>
-    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
@@ -68,9 +63,9 @@
   <div class="message-input"></div>
     <ion-input placeholder="Escrevendo..."></ion-input>
     <div class="send-button">
-      
+
     </div>
 </div>
- 
+
 
 </ion-content>

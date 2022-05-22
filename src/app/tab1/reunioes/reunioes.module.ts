@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { InboxPageRoutingModule } from './inbox-routing.module';
+import { ReunioesPageRoutingModule } from './reunioes-routing.module';
 
-import { InboxPage } from './inbox.page';
+import { ReunioesPage } from './reunioes.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    InboxPageRoutingModule
+    ReunioesPageRoutingModule
   ],
-  declarations: [InboxPage]
+  declarations: [ReunioesPage]
 })
-export class InboxPageModule {}
+export class ReunioesPageModule {}

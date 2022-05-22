@@ -7,16 +7,32 @@ const routes: Routes = [
     path: '',
     component: Tab1Page,
   },  {
-    path: 'inbox',
-    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+    path: 'solicitacoes',
+    loadChildren: () => import('./solicitacoes/solicitacoes.module').then( m => m.SolicitacoesPageModule)
   },
   {
-    path: 'outbox',
-    loadChildren: () => import('./outbox/outbox.module').then( m => m.OutboxPageModule)
+    path: 'projetos',
+    loadChildren: () => import('./projetos/projetos.module').then( m => m.ProjetosPageModule)
   },
   {
-    path: 'spam',
-    loadChildren: () => import('./spam/spam.module').then( m => m.SpamPageModule)
+    path: 'pagamentos',
+    loadChildren: () => import('./pagamentos/pagamentos.module').then( m => m.PagamentosPageModule)
+  },
+  {
+    path: 'reunioes',
+    loadChildren: () => import('./reunioes/reunioes.module').then( m => m.ReunioesPageModule)
+  },
+  {
+    path: 'tutorial',
+    loadChildren: () => import('./tutorial/tutorial.module').then( m => m.TutorialPageModule)
+  },
+  {
+    path: 'config',
+    loadChildren: () => import('./config/config.module').then( m => m.ConfigPageModule)
+  },
+  {
+    path: 'suporte',
+    loadChildren: () => import('./suporte/suporte.module').then( m => m.SuportePageModule)
   },
 
 ];
